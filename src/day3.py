@@ -17,7 +17,7 @@ def init_gemini():
     )
 
 def qna_mode(llm):
-    question = input("\n🔎 Enter your question: ")
+    question = input("\n Enter your question: ")
 
     template = PromptTemplate(
         input_variables=["question"],
@@ -25,10 +25,10 @@ def qna_mode(llm):
     )
     prompt = template.format(question=question)
     response = llm.invoke(prompt)
-    print("\n💬 Answer:\n", clean_output(response.content))
+    print("\n Answer:\n", clean_output(response.content))
 
 def summarize_mode(llm):
-    text = input("\n📄 Paste the text you want to summarize:\n")
+    text = input("\n Paste the text you want to summarize:\n")
 
     template = PromptTemplate(
         input_variables=["text"],
@@ -36,7 +36,7 @@ def summarize_mode(llm):
     )
     prompt = template.format(text=text)
     response = llm.invoke(prompt)
-    print("\n💬 Answer:\n", clean_output(response.content))
+    print("\n Answer:\n", clean_output(response.content))
 
 def clean_output(text: str) -> str:
     text = re.sub(r'[*_`#>]', '', text)
@@ -64,7 +64,7 @@ def run_day3():
         elif choice == "2":
             summarize_mode(llm)
         elif choice == "3":
-            print("👋 Exiting chatbot. Goodbye!")
+            print("Exiting chatbot. Goodbye!")
             break
         else:
-            print("⚠️ Invalid choice. Try again.")
+            print("Invalid choice. Try again.")

@@ -9,8 +9,8 @@ def main():
     args = parser.parse_args()
 
     day = args.day
-    if day == 2:
-        print("🚀 Launching Streamlit app for Day 2...")
+    if day == 2 or day == 4:
+        print("Launching Streamlit app for Day 2...")
         subprocess.run([sys.executable, "-m", "streamlit", "run", "src/day2.py"])
         return
 
@@ -20,9 +20,9 @@ def main():
         if hasattr(module, func_name):
             getattr(module, func_name)()
         else:
-            print(f"❌ '{func_name}()' not found in day{day}.py")
+            print(f" {func_name}() not found in day{day}.py")
     except ModuleNotFoundError:
-        print(f"❌ day{day}.py not found in src/")
+        print(f" day{day}.py not found in src/")
 
 if __name__ == "__main__":
     main()
