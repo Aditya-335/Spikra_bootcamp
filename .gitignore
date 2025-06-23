@@ -3,3 +3,4 @@ venv/
 __pycache__/
 faiss_index/
 chroma_db/
+chroma_day6/
