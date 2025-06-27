@@ -6,3 +6,4 @@ langchain-google-genai
 langchain-community
 langchain-core
 langchain-chroma
+protobuf<5
