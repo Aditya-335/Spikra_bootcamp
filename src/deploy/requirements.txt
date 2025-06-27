@@ -1,0 +1,8 @@
+streamlit
+PyPDF2
+python-dotenv
+langchain
+langchain-google-genai
+langchain-community
+langchain-core
+langchain-chroma
