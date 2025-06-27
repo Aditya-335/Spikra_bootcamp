@@ -47,20 +47,20 @@ It lets users **chat with their own PDFs**, maintains **conversation memory**, a
 
 1️⃣ **Clone the Repository**
 
-git clone <your-repo-url>
-cd <your-repo>
+`git clone <your-repo-url>`
+`cd <your-repo>`
 
 2️⃣ **Install Dependencies**
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 3️⃣ **Set Up Environment Variables(.env)**
 
-GOOGLE_API_KEY=your_google_api_key_here
+`GOOGLE_API_KEY=your_google_api_key_here`
 
 4️⃣ Run the App Locally
 
-streamlit run src/day10.py
+`streamlit run src/day10.py`
 
 ---
 
